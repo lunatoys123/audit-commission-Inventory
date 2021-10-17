@@ -5,24 +5,25 @@ import tailwind from "tailwind-rn";
 const Login = () => {
   return (
     <View style={tailwind("flex items-center justify-center h-full")}>
+      <Text style={tailwind("text-lg font-bold")}>Audit Commission Inventory</Text>
       <View
         style={tailwind(
-          "rounded border border-2  border-gray-500 w-10/12  items-center border-opacity-20"
+          "w-10/12  items-center"
         )}
       >
         <TextInput
           placeholder="user name"
           style={tailwind(
-            "border border-gray-500 border-opacity-20 h-10 w-10/12 my-10"
+            "rounded border border-gray-500 border-opacity-20 h-10 w-10/12 my-5 p-2"
           )}
         />
         <TextInput
           placeholder="user Password"
           style={tailwind(
-            "border border-gray-500 border-opacity-20 h-10 w-10/12 my-10"
+            "rounded border border-gray-500 border-opacity-20 h-10 w-10/12 my-5 p-2"
           )}
         />
-        <Button title="Login" style={tailwind("my-10")}/>
+        <Button title="Login" />
       </View>
     </View>
   );
